@@ -14,11 +14,10 @@ botaoAdicionar.addEventListener('click',
         var erros = validarPaciente(paciente);
 
         //Impede de adicionar o paciente e emite mensagem de erro//
+        console.log(erros);
         if(erros.length > 0){
 
-            var mensagemErro = document.querySelector("#mensagem-erro");
-            mensagemErro.textContent = erros;
-            console.log("Paciente Inválido");
+            exibirMensagemErro(erros);
             return;
         }
 
@@ -73,7 +72,18 @@ function validarPaciente(paciente){
     return erros;
 }
 
+function exibirMensagemErro(erros){
+    //Quero adicionar cada item do array//
+    //Dentro da <ul>//
+    //Busca a tag <ul>//
+    let ul = document.querySelector("#mensagens-erro");
 
-
+    erros.forEach(function(erro){
+        //Primeiro criar uma <li>//
+        let li = document.createElement("li");
+        li.textContent = erro;
+        ul.appendChild(li);
+    });
+}
 
 
