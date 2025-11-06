@@ -2,7 +2,7 @@
 	box-sizing: border-box;
  }
 body{
-	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-family: "New Rocker", system-ui;
 	font-size: 14px;
 }
 header{
@@ -40,7 +40,7 @@ section h2{
 	font-size: 3em;
 	display: block;
 	padding-bottom: .5em;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #000000;
 	margin-bottom: .5em;
 }
 table{
@@ -56,10 +56,11 @@ td, th {
 }
 th{
 	font-weight: bold;
-	background-color: #EEE;
+	background-color: #424040;
+	color: #ffffff;
 }
 label{
-	color: #555;
+	color: #ff0000;
 	display: block;
 	margin-bottom: .2em;
 }
@@ -91,6 +92,7 @@ button{
 	color: #fff;
 	background-color:#0c8cd3;
 	border-color: #04324c;
+	border-radius: 40px;
 	width: 20%;
     display: block;
     clear: both;
@@ -129,3 +131,19 @@ button[disabled=disabled], button:disabled {
 	background-color: rgb(211, 18, 18);
 	color: white;
 }
+
+#filtrar-tabela::placeholder{
+	color:white;
+}
+
+.invisivel{
+	display: none;
+}
+
+.new-rocker-regular {
+	font-family: "New Rocker", system-ui;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+  
